@@ -26,10 +26,12 @@ def caesar_cipher(string, key)
       shift += 1
     end
   }
+  
   encrypt = string_array.join("")
-  puts "\nencrypted text: #{encrypt}"
+  return encrypt
 end
 
+=begin
 puts "Caesar Cipher Encryption"
 puts "Please enter the text you would like to encrypt:"
 input = gets.chomp
@@ -43,3 +45,4 @@ until key.to_i.between?(1,26)
 end
 
 caesar_cipher(input, key)
+=end
